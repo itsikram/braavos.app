@@ -1,0 +1,26 @@
+.footer-menu {
+  display: flex;
+  justify-content: space-between;
+
+  .menu-item-has-children > a{
+    margin-bottom: 20px;
+    display: block;
+    color: var(--footer-menu-link-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 24px; /* 133.333% */
+  }
+
+  .sub-menu {
+    li {
+      a {
+        color: var(--footer-menu-link-color);
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 32px; /* 200% */
+      }
+    }
+  }
+}

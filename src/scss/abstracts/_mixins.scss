@@ -1,0 +1,37 @@
+// Media queries
+
+@mixin media_req($width, $min_or_max) {
+  @media screen and (#{$min_or_max}-width: $width) {
+    @content;
+  }
+}
+
+@mixin xxl($min_or_max: 'max') {
+  @include media_req($xxl, $min_or_max) {
+    @content;
+  }
+}
+
+@mixin xl($min_or_max: 'max') {
+  @include media_req($xl, $min_or_max) {
+    @content;
+  }
+}
+
+@mixin lg($min_or_max: 'max') {
+  @include media_req($lg, $min_or_max) {
+    @content;
+  }
+}
+
+@mixin md($min_or_max: 'max') {
+  @include media_req($md, $min_or_max) {
+    @content;
+  }
+}
+
+@mixin sm($min_or_max: 'max') {
+  @include media_req($sm, $min_or_max) {
+    @content;
+  }
+}

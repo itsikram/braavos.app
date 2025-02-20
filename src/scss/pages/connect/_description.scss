@@ -1,0 +1,106 @@
+.connect-description {
+  padding: 130px 0;
+
+  @media (max-width: 768px) {
+    padding: 85px 0;
+  }
+
+  &__container {
+    max-width: calc(950px + 22px + 22px);
+    width: 100%;
+    padding: 0 22px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: var(--main-font-color);
+    text-align: center;
+
+    /* H2 */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px; /* 126.087% */
+    margin-bottom: 70px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+      line-height: 44px;
+      margin-bottom: 24px;
+    }
+  }
+
+  &__first-text {
+    color: var(--main-font-color);
+
+    /* Body L */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
+    margin-bottom: 70px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__image {
+    margin-bottom: 100px;
+
+    @media (max-width: 768px) {
+      margin-bottom: 40px;
+    }
+  }
+
+  &__wrapper {
+    margin-bottom: 60px;
+  }
+
+  &__left-wrapper {
+    max-width: 451px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+      margin-bottom: 35px;
+    }
+  }
+
+  &__wrapper-text {
+    color: var(--main-font-color);
+
+    /* H4 */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px; /* 157.143% */
+
+  }
+
+  &__right-wrapper {
+    max-width: 377px;
+    width: 100%;
+
+    @media (max-width: 768px) {
+      max-width: 100%;
+    }
+  }
+
+  &__second-text {
+    color: var(--main-font-color);
+
+    /* Body L */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
+  }
+}

@@ -1,0 +1,15 @@
+.main-footer {
+  padding: 130px 0 55px 0;
+
+  &__container {
+    width: 100%;
+    max-width: calc(1315px + 38px + 38px);
+    padding: 0 38px;
+    margin: 0 auto;
+  }
+
+  &__logo-wrapper {
+    margin-bottom: 34px;
+  }
+
+}

@@ -1,0 +1,68 @@
+{
+    "key": "group_648df32ce3063",
+    "title": "Download",
+    "fields": [
+        {
+            "key": "field_648df32dee256",
+            "label": "Title",
+            "name": "down_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_648df34bee257",
+            "label": "AfterTitle",
+            "name": "down_aftertitle",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "50",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_template",
+                "operator": "==",
+                "value": "templates\/download.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": [
+        "the_content"
+    ],
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "translation",
+    "modified": 1704384539
+}

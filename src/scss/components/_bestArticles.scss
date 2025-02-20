@@ -1,0 +1,74 @@
+.bestArticles {
+  &__title {
+    // font-family: $font_mulish;
+    font-size: 28px;
+    font-weight: 700;
+    line-height: 140%;
+    margin: 0;
+    padding: 0 0 24px;
+
+    /*&::after {
+      content: '';
+      display: block;
+      background-color: #4062ff;
+      margin-top: 22px;
+      width: 36%;
+      height: 4px;
+    }*/
+  }
+
+  &__items {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  &__item {
+    border-bottom: 1px solid #353535;
+    padding-bottom: 24px;
+
+    &Title {
+      // font-family: $font_mulish;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 124%;
+      margin: 0 0 18px;
+
+      a {
+        color: inherit;
+        font-size: inherit;
+        line-height: inherit;
+        text-decoration: none;
+      }
+    }
+
+    &Meta {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    &Category {
+      font-family: $font_roboto;
+      color: #949494;
+      background-color: #3d3c3c;
+      border-radius: 100px;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 140%;
+      padding: 10px 30px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &Date {
+      color: #8d8d8d;
+      font-size: 14px;
+      font-weight: 400;
+      line-height: 125%;
+      flex-shrink: 0;
+    }
+  }
+}

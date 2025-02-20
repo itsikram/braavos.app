@@ -1,0 +1,15 @@
+.postGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 40px;
+  row-gap: 22px;
+
+  @include xl() {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  @include md() {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+}

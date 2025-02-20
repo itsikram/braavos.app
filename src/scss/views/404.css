@@ -1,0 +1,79 @@
+.page_404 {
+  margin: 0 auto 0 auto;
+  padding: 0 25px 0 25px;
+  max-width: 1150px;
+  min-height: 73vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url("../img/404_bg.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center -200px;
+}
+@media (max-width: 768px) {
+  .page_404 {
+    min-height: 70vh;
+    background-position: center -130px;
+  }
+}
+.page_404 img {
+  display: block;
+  margin: 30px auto 50px auto;
+  width: 540px;
+  max-width: 100%;
+}
+@media (max-width: 768px) {
+  .page_404 img {
+    max-width: 63%;
+  }
+}
+.page_404 h1 {
+  display: block;
+  margin: 0 0 10px 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+}
+@media (max-width: 767px) {
+  .page_404 h1 {
+    text-align: center;
+    font-size: 26px;
+    line-height: 40px;
+  }
+}
+.page_404 p {
+  margin: 0 0 15px 0;
+  text-align: center;
+  color: rgb(255, 255, 255);
+  display: block;
+  font-size: 24px;
+  font-weight: 300;
+  line-height: 36px;
+}
+@media (max-width: 767px) {
+  .page_404 p {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}
+.page_404 .page_404_a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto 30px auto;
+  padding: 0 30px 0 30px;
+  max-height: 60px;
+  height: 60px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: rgb(255, 255, 255);
+  flex-grow: 1;
+  font-size: 18px;
+  text-decoration: none;
+  background-color: #4062FF;
+  border-radius: 10px;
+}/*# sourceMappingURL=404.css.map */

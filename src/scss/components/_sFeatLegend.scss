@@ -1,0 +1,65 @@
+.sFeatLegend {
+  margin-top: 90px;
+
+  .container{
+    background: linear-gradient(91.25deg, #587eff 0%, #445fb4 100%);
+    border-radius: 16px;
+
+    @include media_req($xl - 1, 'max') {
+      border-radius: 0;
+    }
+
+    @include md() {
+      padding: 0;
+    }
+  }
+
+  @include media_req($lg - 1, 'max') {
+    margin-top: 50px;
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 32px 100px 32px 150px;
+    margin-bottom: 0;
+    position: relative;
+
+    &::before{
+      width: 75px;
+      height: 46px;
+      content: '';
+      background: url('../svg/quote-up.svg') center top / cover no-repeat;
+      position: absolute;
+      left: 70px;
+      top: 23px;
+
+      @include media_req($xl - 1, 'max') {
+        content: none;
+      }
+    }
+
+    &::after{
+      width: 75px;
+      height: 46px;
+      content: '';
+      background: url('../svg/quote-down.svg') center top / cover no-repeat;
+      position: absolute;
+      right: 70px;
+      bottom: 23px;
+
+      @include media_req($xl - 1, 'max') {
+        content: none;
+      }
+    }
+
+    @include md() {
+      padding: 40px 18px;
+    }
+
+    p, div {
+      margin-bottom: 0;
+    }
+  }
+}

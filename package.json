@@ -1,0 +1,21 @@
+{
+  "name": "simple-theme",
+  "version": "0.0.1",
+  "description": "Simple starter wordpress theme",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Wordpress",
+    "theme"
+  ],
+  "author": "Nikita Demchenko",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^1.5.2",
+    "sass": "^1.53.0"
+  }
+}

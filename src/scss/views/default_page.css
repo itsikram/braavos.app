@@ -1,0 +1,19 @@
+.defaultPage {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 181%;
+  padding: 50px 0;
+}
+.defaultPage ul,
+.defaultPage ol {
+  margin: 0 0 14px;
+  padding: 0 0 0 40px;
+}
+.defaultPage ul.noListStyle,
+.defaultPage ol.noListStyle {
+  list-style: none;
+}
+.defaultPage ul li + li,
+.defaultPage ol li + li {
+  margin-top: 10px;
+}/*# sourceMappingURL=default_page.css.map */

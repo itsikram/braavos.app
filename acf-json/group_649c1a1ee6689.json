@@ -1,0 +1,46 @@
+{
+    "key": "group_649c1a1ee6689",
+    "title": "Single Page",
+    "fields": [
+        {
+            "key": "field_649c1a1f4a879",
+            "label": "Center the title?",
+            "name": "title_centered",
+            "aria-label": "",
+            "type": "true_false",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "message": "",
+            "default_value": 0,
+            "ui_on_text": "",
+            "ui_off_text": "",
+            "ui": 1
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "default"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "page",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "translation",
+    "modified": 1704384667
+}

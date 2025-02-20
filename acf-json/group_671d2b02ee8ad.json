@@ -1,0 +1,212 @@
+{
+    "key": "group_671d2b02ee8ad",
+    "title": "Braavos settings",
+    "fields": [
+        {
+            "key": "field_671d2b039092e",
+            "label": "Download link",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_671d2b209092f",
+            "label": "Link",
+            "name": "download_link",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "return_format": "array"
+        },
+        {
+            "key": "field_671fccdc04d77",
+            "label": "Main menu",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "placement": "top",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_671fccef04d78",
+            "label": "Main menu",
+            "name": "main_menu",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 0,
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add menu item",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_671fcd0604d79",
+                    "label": "Main menu link",
+                    "name": "main_menu_link",
+                    "aria-label": "",
+                    "type": "link",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "35",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "return_format": "array",
+                    "parent_repeater": "field_671fccef04d78"
+                },
+                {
+                    "key": "field_671fcd2404d7a",
+                    "label": "Main menu icon",
+                    "name": "main_menu_icon",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "65",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "default_value": "",
+                    "maxlength": "",
+                    "rows": "",
+                    "placeholder": "",
+                    "new_lines": "",
+                    "parent_repeater": "field_671fccef04d78"
+                },
+                {
+                    "key": "field_671fcd3a04d7b",
+                    "label": "Submenu",
+                    "name": "main_menu_submenu",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 0,
+                    "layout": "block",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add submenu item",
+                    "rows_per_page": 20,
+                    "parent_repeater": "field_671fccef04d78",
+                    "sub_fields": [
+                        {
+                            "key": "field_671fcd5904d7c",
+                            "label": "Link",
+                            "name": "submenu_item_link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "35",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "return_format": "array",
+                            "parent_repeater": "field_671fcd3a04d7b"
+                        },
+                        {
+                            "key": "field_671fcd6f04d7d",
+                            "label": "Icon",
+                            "name": "submenu_item_icon",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "65",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 0,
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "",
+                            "parent_repeater": "field_671fcd3a04d7b"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "braavos-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "translation",
+    "modified": 1730893087
+}

@@ -1,0 +1,704 @@
+{
+    "key": "group_66feb0f4bd907",
+    "title": "Braavos security page",
+    "fields": [
+        {
+            "key": "field_66feb0f55ba82",
+            "label": "security_builder",
+            "name": "security_builder",
+            "aria-label": "",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "layouts": {
+                "layout_66feb8a5ef2a8": {
+                    "key": "layout_66feb8a5ef2a8",
+                    "name": "hero",
+                    "label": "hero",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66feb8aaef2aa",
+                            "label": "Title",
+                            "name": "security_hero_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_67226cab30e5b",
+                            "label": "Description",
+                            "name": "security_hero_description",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": false,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "new_lines": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "rows": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_66febcba27729": {
+                    "key": "layout_66febcba27729",
+                    "name": "how",
+                    "label": "how",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66febcbf2772b",
+                            "label": "Title",
+                            "name": "security_how_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6729394964490",
+                            "label": "List",
+                            "name": "security_how_list",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_6729396d64491",
+                                    "label": "Item image",
+                                    "name": "security_how_item_image",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "medium",
+                                    "parent_repeater": "field_6729394964490"
+                                },
+                                {
+                                    "key": "field_6729399264492",
+                                    "label": "Item title",
+                                    "name": "security_how_item_title",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_6729394964490"
+                                },
+                                {
+                                    "key": "field_672939ba64493",
+                                    "label": "Item text",
+                                    "name": "security_how_item_text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_6729394964490"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_66fed468b6e4f": {
+                    "key": "layout_66fed468b6e4f",
+                    "name": "biometric",
+                    "label": "biometric",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66fed46db6e51",
+                            "label": "Title",
+                            "name": "security_biometric_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6729448368b44",
+                            "label": "List",
+                            "name": "security_biometric_list",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_6729449d68b45",
+                                    "label": "Text",
+                                    "name": "security_biometric_text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_6729448368b44"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_66fed9ced828a": {
+                    "key": "layout_66fed9ced828a",
+                    "name": "three-factor",
+                    "label": "three-factor",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66fed9d6d828c",
+                            "label": "Title",
+                            "name": "security_three_factor_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6729469889b21",
+                            "label": "List",
+                            "name": "security_three_factor_list",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_672946cb89b22",
+                                    "label": "Text",
+                                    "name": "security_three_factor_text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_6729469889b21"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_66fedc9d31d52": {
+                    "key": "layout_66fedc9d31d52",
+                    "name": "support",
+                    "label": "support",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66fedca331d54",
+                            "label": "Title",
+                            "name": "security_support_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_672951e713702",
+                            "label": "Description",
+                            "name": "security_support_description",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_66fede337612f": {
+                    "key": "layout_66fede337612f",
+                    "name": "detection",
+                    "label": "detection",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_66fede3776131",
+                            "label": "Title",
+                            "name": "security_detection_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6729541a9faf7",
+                            "label": "List",
+                            "name": "security_detection_list",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_672954449faf8",
+                                    "label": "Text",
+                                    "name": "security_detection_text",
+                                    "aria-label": "",
+                                    "type": "text",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "default_value": "",
+                                    "maxlength": "",
+                                    "placeholder": "",
+                                    "prepend": "",
+                                    "append": "",
+                                    "parent_repeater": "field_6729541a9faf7"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6706ee8144e34": {
+                    "key": "layout_6706ee8144e34",
+                    "name": "socials",
+                    "label": "socials",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6706ee8544e36",
+                            "label": "Title",
+                            "name": "security_socials_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_6729564266ae7",
+                            "label": "Items",
+                            "name": "security_socials_items",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_6729565f66ae8",
+                                    "label": "Icon",
+                                    "name": "socials_item_icon",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "medium",
+                                    "parent_repeater": "field_6729564266ae7"
+                                },
+                                {
+                                    "key": "field_6729571c66ae9",
+                                    "label": "Link",
+                                    "name": "socials_item_link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "parent_repeater": "field_6729564266ae7"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                "layout_6706ee9044e37": {
+                    "key": "layout_6706ee9044e37",
+                    "name": "apps",
+                    "label": "apps",
+                    "display": "block",
+                    "sub_fields": [
+                        {
+                            "key": "field_6706ee9344e39",
+                            "label": "Title",
+                            "name": "security_apps_title",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_672a4b14ce2bd",
+                            "label": "Description",
+                            "name": "security_apps_description",
+                            "aria-label": "",
+                            "type": "text",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "default_value": "",
+                            "maxlength": "",
+                            "placeholder": "",
+                            "prepend": "",
+                            "append": ""
+                        },
+                        {
+                            "key": "field_672a4b34ce2be",
+                            "label": "List",
+                            "name": "security_apps_list",
+                            "aria-label": "",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            },
+                            "layout": "block",
+                            "min": 0,
+                            "max": 0,
+                            "collapsed": "",
+                            "button_label": "Add Row",
+                            "rows_per_page": 20,
+                            "sub_fields": [
+                                {
+                                    "key": "field_672a4b58ce2bf",
+                                    "label": "Item icon",
+                                    "name": "security_apps_item_icon",
+                                    "aria-label": "",
+                                    "type": "image",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
+                                    "preview_size": "medium",
+                                    "parent_repeater": "field_672a4b34ce2be"
+                                },
+                                {
+                                    "key": "field_672a4b87ce2c0",
+                                    "label": "Link",
+                                    "name": "security_apps_item_link",
+                                    "aria-label": "",
+                                    "type": "link",
+                                    "instructions": "",
+                                    "required": 0,
+                                    "conditional_logic": 0,
+                                    "wrapper": {
+                                        "width": "",
+                                        "class": "",
+                                        "id": ""
+                                    },
+                                    "return_format": "array",
+                                    "parent_repeater": "field_672a4b34ce2be"
+                                }
+                            ]
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                }
+            },
+            "min": "",
+            "max": "",
+            "button_label": "Add Row"
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/template-security-page.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "advanced",
+    "modified": 1730893086
+}

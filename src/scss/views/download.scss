@@ -1,0 +1,67 @@
+.downloadPage {
+  &__wrapper {
+    padding: 66px 0 50px;
+    position: relative;
+
+    @include lg() {
+      padding-top: 44px;
+    }
+    @include md() {
+      padding-top: 35px;
+    }
+
+    .titleBorder {
+      display: table;
+      margin-left: auto;
+      margin-right: auto;
+      font-size: 40px;
+
+      @include lg() {
+        font-size: 30px;
+        line-height: 39px;
+      }
+
+      @include md() {
+        padding: 0 20px;
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        width: 51px;
+        height: 44px;
+        background-image: url('../img/star-footer.webp');
+        background-repeat: no-repeat;
+        background-size: contain;
+        aspect-ratio: 54/49;
+        position: absolute;
+        left: -51px;
+        top: -35px;
+
+        @include lg() {
+          top: -22px;
+          left: -33px;
+          width: 33px;
+        }
+        @include md() {
+          top: -20px;
+          left: 0;
+          width: 28px;
+        }
+      }
+    }
+
+    .afterTitle {
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 45px;
+      margin-top: 44px;
+      text-align: center;
+
+      @include lg() {
+        font-size: 20px;
+        line-height: 30px;
+      }
+    }
+  }
+}

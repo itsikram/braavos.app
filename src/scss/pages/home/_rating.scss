@@ -1,0 +1,142 @@
+.home-rating {
+
+  padding-bottom: 130px;
+
+  @media (max-width: 768px) {
+    padding-bottom: 85px;
+  }
+
+  &__container {
+    max-width: calc(1094px + 22px + 22px);
+    width: 100%;
+    padding: 0 22px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    width: 100%;
+    margin: 0 auto;
+    color: var(--main-font-color);
+
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px; /* 126.087% */
+
+    margin-bottom: 68px;
+
+    @media (max-width: 768px) {
+      padding: 32px 45px;
+
+    }
+
+    span {
+      background: radial-gradient(50% 50% at 50% 50%, #587EFF 47%, #5478F4 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+  }
+
+  &__wrapper {
+    margin: 0 auto;
+    max-width: 955px;
+    width: 100%;
+    border-radius: 100px;
+    background: linear-gradient(129deg, #099FC0 -17.03%, #8358FF 96.4%);
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    padding: 9px 60px 21px 51px;
+
+    @media (max-width: 1024px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    @media (max-width: 768px) {
+      padding: 32px 45px;
+
+    }
+  }
+
+  &__stars {
+    display: flex;
+    gap: 32px;
+    margin-right: 32px;
+
+    @media (max-width: 768px) {
+      margin-right: 0;
+      gap: 25px;
+      margin-bottom: 20px;
+    }
+
+  }
+
+  &__star {
+    svg {
+      @media (max-width: 768px) {
+        width: 42px;
+        height: 42px;
+      }
+    }
+
+    &--last {
+      svg {
+        @media (max-width: 768px) {
+          width: 45px;
+          height: 45px;
+        }
+      }
+    }
+  }
+
+  &__text {
+    color: rgba(255, 255, 255, 0.60);
+
+    text-align: center;
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    display: flex;
+
+    align-items: flex-end;
+
+    @media (max-width: 768px) {
+      font-size: 31px;
+    }
+
+
+    span {
+      color: #fff;
+      font-family: "Plus Jakarta Sans", sans-serif;
+      font-size: 76.343px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+
+      @media (max-width: 768px) {
+        font-size: 52.55px;
+      }
+    }
+  }
+
+  &__text-reviews {
+    color: rgba(255, 255, 255, 0.60);
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    margin: 13px auto 0 auto;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+      margin: 0;
+    }
+
+  }
+}

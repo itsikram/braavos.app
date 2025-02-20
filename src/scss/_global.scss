@@ -1,0 +1,41 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: var(--main-bg-color);
+  position: relative;
+
+
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.dark-bg {
+  background-image: url("../assets/images/dark-bg.svg");
+}
+
+.light-bg {
+  background-image: url("../assets/images/light-bg.svg");
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.d-flex {
+  display: flex;
+}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+

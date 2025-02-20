@@ -1,0 +1,156 @@
+body {
+  font-family: $font_opensans;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin: 0 0 20px;
+}
+
+h1,
+.h1 {
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 130%;
+  position: relative;
+
+  @include lg() {
+    font-size: 28px;
+  }
+
+  @include md() {
+    font-size: 24px;
+  }
+
+  &_underlined {
+    &::after {
+      background-image: linear-gradient(91.25deg, #587eff 0%, #445fb4 100%);
+      border-radius: 18px;
+      content: '';
+      display: block;
+      margin-top: 15px;
+      width: 155px;
+      height: 5px;
+    }
+  }
+
+  &_centered {
+    text-align: center;
+
+    &::after {
+      left: 0;
+      right: 0;
+      margin-left: auto;
+      margin-right: auto;
+    }
+  }
+}
+
+h2,
+.h2 {
+  font-size: 26px;
+  font-weight: 300;
+  line-height: 130%;
+
+  @include lg() {
+    font-size: 24px;
+  }
+
+  @include md() {
+    font-size: 16px;
+  }
+}
+
+h3,
+.h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 125%;
+}
+
+h4,
+.h4 {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 180%;
+
+  @include md() {
+    font-size: 16px;
+  }
+}
+
+h5,
+.h5 {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 128%;
+}
+
+h6,
+.h6 {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 181%;
+}
+
+.title {
+  // font-family: 'Mulish', sans-serif;
+  font-size: 36px;
+  font-weight: 700;
+  color: $white;
+  line-height: 50px;
+  margin: 0;
+
+  @include lg() {
+    font-size: 28px;
+    line-height: 37px;
+  }
+
+  @include md() {
+    font-size: 24px;
+    line-height: 31px;
+  }
+
+  &Border {
+    @extend .title;
+    text-align: center;
+    margin-bottom: 20px;
+    position: relative;
+
+    &:after {
+      content: '';
+      position: absolute;
+      bottom: -24px;
+      width: 174px;
+      height: 4px;
+      background-color: $accent;
+      border-radius: 18px;
+      left: calc(50% - 87px);
+    }
+  }
+}
+
+.afterTitle {
+  font-size: 26px;
+  font-weight: 300;
+  color: $white;
+  line-height: 39px;
+
+  @include lg() {
+    font-size: 20px;
+    line-height: 30px;
+  }
+}

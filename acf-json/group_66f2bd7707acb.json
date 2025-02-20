@@ -1,0 +1,180 @@
+{
+    "key": "group_66f2bd7707acb",
+    "title": "Theme settings bravos",
+    "fields": [
+        {
+            "key": "field_66f2bd7731f89",
+            "label": "Mobile menu",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "placement": "left",
+            "endpoint": 0,
+            "selected": 0
+        },
+        {
+            "key": "field_66f2be04767dc",
+            "label": "mobile menu",
+            "name": "mobile_menu",
+            "aria-label": "",
+            "type": "repeater",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "wpml_cf_preferences": 1,
+            "layout": "block",
+            "pagination": 0,
+            "min": 0,
+            "max": 0,
+            "collapsed": "",
+            "button_label": "Add Row",
+            "rows_per_page": 20,
+            "sub_fields": [
+                {
+                    "key": "field_66f2bec8db0ee",
+                    "label": "Title icon",
+                    "name": "title_icon",
+                    "aria-label": "",
+                    "type": "textarea",
+                    "instructions": "",
+                    "required": false,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "default_value": "",
+                    "new_lines": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "rows": "",
+                    "parent_repeater": "field_66f2be04767dc"
+                },
+                {
+                    "key": "field_66f2be27767dd",
+                    "label": "Title",
+                    "name": "title",
+                    "aria-label": "",
+                    "type": "text",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "50",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 2,
+                    "default_value": "",
+                    "maxlength": "",
+                    "placeholder": "",
+                    "prepend": "",
+                    "append": "",
+                    "parent_repeater": "field_66f2be04767dc"
+                },
+                {
+                    "key": "field_66f2beffbfcf4",
+                    "label": "menu",
+                    "name": "menu",
+                    "aria-label": "",
+                    "type": "repeater",
+                    "instructions": "",
+                    "required": 0,
+                    "conditional_logic": 0,
+                    "wrapper": {
+                        "width": "",
+                        "class": "",
+                        "id": ""
+                    },
+                    "wpml_cf_preferences": 1,
+                    "layout": "block",
+                    "pagination": 0,
+                    "min": 0,
+                    "max": 0,
+                    "collapsed": "",
+                    "button_label": "Add Row",
+                    "rows_per_page": 20,
+                    "parent_repeater": "field_66f2be04767dc",
+                    "sub_fields": [
+                        {
+                            "key": "field_66f2bf1abfcf5",
+                            "label": "menu icon",
+                            "name": "menu_icon",
+                            "aria-label": "",
+                            "type": "textarea",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "40",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 2,
+                            "default_value": "",
+                            "maxlength": "",
+                            "rows": "",
+                            "placeholder": "",
+                            "new_lines": "",
+                            "parent_repeater": "field_66f2beffbfcf4"
+                        },
+                        {
+                            "key": "field_66f2bf33bfcf6",
+                            "label": "menu link",
+                            "name": "menu_link",
+                            "aria-label": "",
+                            "type": "link",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "60",
+                                "class": "",
+                                "id": ""
+                            },
+                            "wpml_cf_preferences": 1,
+                            "return_format": "array",
+                            "parent_repeater": "field_66f2beffbfcf4"
+                        }
+                    ]
+                }
+            ]
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "options_page",
+                "operator": "==",
+                "value": "theme-settings"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "translation",
+    "modified": 1730893094
+}

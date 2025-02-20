@@ -1,0 +1,59 @@
+.sFeatVideo {
+  margin-top: 70px;
+
+  @include media_req($lg - 1, 'max') {
+    margin-top: 24px;
+  }
+
+  &__inner {
+    border-radius: 20px;
+    overflow: hidden;
+    aspect-ratio: 16/9;
+    padding-bottom: 56.25%; // fallback for aspect ratio of 16:9
+    position: relative;
+  }
+
+  &__player,
+  &__preview {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  &__preview {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    img {
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    &::after {
+      background: url('../svg/video-play-button-n.svg') center/contain no-repeat;
+      content: '';
+      width: 120px;
+      height: 120px;
+      position: relative;
+      transition: 0.5s;
+      z-index: 1;
+
+      @include md() {
+        width: 70px;
+        height: 70px;
+      }
+    }
+
+    &:hover::after {
+      transform: scale(1.05);
+    }
+  }
+}

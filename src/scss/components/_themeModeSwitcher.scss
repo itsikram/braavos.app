@@ -1,0 +1,39 @@
+.themeModeSwitcher {
+  cursor: pointer;
+  user-select: none;
+
+  &_desktop {
+    @include media_req($lg - 1, 'max') {
+      display: none;
+    }
+  }
+
+  &_mobile {
+    @include lg('min') {
+      display: none;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 14px;
+    font-weight: 500;
+
+    @include media_req($lg - 1, 'max') {
+      padding-left: 9px;
+    }
+  }
+
+  img {
+    display: block;
+    width: 35px;
+    height: 35px;
+
+    @include media_req($lg - 1, 'max') {
+      width: 22px;
+      height: 22px;
+    }
+  }
+}

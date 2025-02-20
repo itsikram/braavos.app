@@ -1,0 +1,45 @@
+.sFeatDownload {
+  margin-top: 70px;
+
+  @include media_req($lg - 1, 'max') {
+    margin-top: 50px;
+  }
+
+  .container{
+    padding-top: 65px;
+    padding-bottom: 60px;
+    background-image: linear-gradient(91.25deg, #587eff 0%, #445fb4 100%);
+    border-radius: 16px;
+
+    @include media_req($xl - 1, 'max') {
+      padding: 30px 0 30px;
+      border-radius: 0;
+    }
+
+    @include md() {
+      padding: 30px 20px;
+    }
+  }
+
+  &__title {
+    text-align: center;
+
+    &::after {
+      background: $white;
+    }
+  }
+
+  &__desc {
+    margin: 0;
+    text-align: center;
+  }
+
+  .s__download__browsersItemTitle {
+    background-color: $white;
+    color: $color_bg_primary;
+
+    &:hover {
+      color: $color_bg_primary;
+    }
+  }
+}

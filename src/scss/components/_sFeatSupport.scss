@@ -1,0 +1,173 @@
+.sFeatSupport {
+  margin-top: 70px;
+
+  @include media_req($lg - 1, 'max') {
+    margin-top: 50px;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__inner {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 41px;
+
+    @include media_req($lg - 1, 'max') {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+  }
+
+  .postItem {
+
+    @include media_req($lg - 1, 'max') {
+      width: calc(50% - 15px);
+    }
+    @include md() {
+      width: 100%
+    }
+    /*a {
+      border-radius: 6px;
+      padding: 20px;
+    }
+
+    img {
+      border-radius: 6px;
+    }
+
+    &__info {
+      gap: 30px;
+      min-height: auto;
+    }
+
+    &__title {
+      font-size: 20px;
+      line-height: 125%;
+    }
+
+    &__category {
+      background: linear-gradient(91.25deg, #587eff 0%, #445fb4 100%);
+      color: $white;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 16px;
+      padding: 4px 12px;
+    }
+
+    &__date {
+      color: $white;
+      font-size: 12px;
+    }*/
+  }
+
+  &__discord {
+    background-color: $secondary;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 28px 42px;
+
+    @include media_req($lg - 1, 'max') {
+      width: calc(50% - 15px);
+    }
+
+    @include md() {
+      width: 100%;
+      gap: 78px;
+    }
+
+    &Icon {
+      height: 60px;
+
+      img {
+        width: auto;
+        height: 100%;
+      }
+    }
+
+    &Info {
+      display: flex;
+      flex-direction: column;
+      gap: 19px;
+      text-align: center;
+    }
+
+    &Title {
+      font-size: 25px;
+      font-weight: 700;
+      line-height: 32px;
+      margin: 0;
+    }
+
+    &Desc {
+      font-size: 20px;
+      font-weight: 400;
+      line-height: 27px;
+    }
+
+    &Links {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: 100%;
+    }
+
+    &Link {
+      background-color: $alice_blue;
+      border-radius: 12px;
+      color: $color_bg_primary;
+      display: flex;
+      align-items: center;
+      gap: 9px;
+      font-size: 16px;
+      font-weight: 700;
+      line-height: 23px;
+      padding: 14px 16px;
+      text-decoration: none;
+
+      @include md() {
+        font-weight: 600;
+        font-size: 15px;
+      }
+
+      &:hover {
+        color: $color_bg_primary;
+      }
+
+      &::before {
+        background: center/contain no-repeat;
+        content: '';
+        width: 25px;
+        height: 25px;
+
+        @include md() {
+          width: 20px;
+          height: 20px;
+        }
+      }
+
+      &_support {
+        &::before {
+          background-image: url('../img/icon-wrench.webp');
+        }
+      }
+
+      &_faq {
+        &::before {
+          background-image: url('../img/icon-question-mark.webp');
+        }
+      }
+
+      span {
+        border-left: 3px solid $color_bg_primary;
+        padding-left: 10px;
+      }
+    }
+  }
+}

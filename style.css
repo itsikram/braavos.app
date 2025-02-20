@@ -1,0 +1,29 @@
+/*
+Theme Name: Braavos
+Theme URI:
+Version: 2.5
+Author: Braavos
+Author URI: https://braavos.app
+Description: WordPress Theme
+Text Domain: braavos
+*/
+
+.wp-block-embed iframe {
+    width: 100%;
+    height: 400px;
+}
+@media (max-width: 600px) {
+    .wp-block-embed iframe {
+        height: 300px;
+    }
+}
+@media (max-width: 500px) {
+    .wp-block-embed iframe {
+        height: 250px;
+    }
+}
+@media (max-width: 400px) {
+    .wp-block-embed iframe {
+        height: 200px;
+    }
+}

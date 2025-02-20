@@ -1,0 +1,17 @@
+/*
+ blue button
+ */
+.br_but {
+  padding: 17px 24px;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #FFF;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 110%;
+  border-radius: 12px;
+  background: #2A2F45;
+  border: 1px solid transparent;
+}/*# sourceMappingURL=forms.css.map */

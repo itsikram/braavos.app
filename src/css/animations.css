@@ -1,0 +1,79 @@
+.fadeInLeft {
+    animation-name: fadeInLeft;
+}
+
+@keyframes fadeInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0%);
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.fadeInDown {
+    animation-name: fadeInDown;
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translate3d(0,-100%,0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.rotateInDownRight {
+    animation-name: rotateInDownRight;
+}
+
+@keyframes rotateInDownRight {
+    from {
+        transform-origin: right bottom;
+        transform: rotate3d(0,0,1,45deg);
+        opacity: 0;
+    }
+
+    to {
+        transform-origin: right bottom;
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.fadeInRight {
+    animation-name: fadeInRight;
+}
+
+@keyframes fadeInRight {
+    from {
+        opacity: 0;
+        transform: translate3d(100%,0,0);
+    }
+
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}

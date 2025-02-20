@@ -1,0 +1,46 @@
+@import 'abstracts/variables';
+@import 'abstracts/functions';
+@import 'abstracts/mixins';
+@import 'abstracts/placeholders';
+
+@import 'base/normalize.scss';
+@import 'base/global.scss';
+@import 'base/typography.scss';
+@import 'base/forms.scss';
+
+@import 'components/header';
+@import 'components/footer';
+@import 'components/socialIcon';
+@import 'components/postGrid';
+@import 'components/postItem';
+@import 'components/bestArticles';
+@import 'components/sSubscribe';
+@import 'components/downloadSection';
+@import 'components/themeModeSwitcher';
+@import 'components/sFeatHead';
+@import 'components/sFeatVideo';
+@import 'components/sFeatIndicators';
+@import 'components/sFeatLegend';
+@import 'components/sFeatDetails';
+@import 'components/sFeatCarousel';
+@import 'components/sFeatSupport';
+@import 'components/sFeatDownload';
+@import 'components/sFeatFaq';
+@import 'components/sFeatHubHead';
+@import 'components/sFeatHubFeatures';
+
+@import "views/homepage";
+@import 'views/blog';
+@import 'views/single';
+@import "views/starknet_score";
+@import "views/campaing_3";
+@import "views/download";
+@import "views/default_page";
+@import "views/archive";
+@import "views/404";
+@import "views/faq_1";
+@import "views/faq_single";
+@import "views/single-feature";
+@import "views/download-STRK";
+
+@import 'base/theme.scss';

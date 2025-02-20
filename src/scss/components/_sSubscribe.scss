@@ -1,0 +1,223 @@
+.sSubscribe {
+  overflow-x: hidden;
+  padding-bottom: 55px;
+
+  &__inner {
+    background-color: $color_bg_secondary;
+		border: 1px solid transparent;
+    border-radius: 24px;
+    display: flex;
+		transition: 0.3s;
+
+    @include md() {
+      flex-direction: column;
+    }
+  }
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    padding: 45px 0 45px 40px;
+    width: 60%;
+    z-index: 1;
+
+    @include media_req('900px', 'max') {
+      padding: 25px 0 35px 30px;
+    }
+    @include md() {
+      padding: 40px 24px;
+      width: 100%;
+    }
+  }
+
+  &__right {
+    position: relative;
+    text-align: center;
+    width: 40%;
+    z-index: 0;
+
+    @include md() {
+      padding: 0 24px 40px;
+      width: 100%;
+    }
+  }
+
+  &__title {
+    // font-family: $font_mulish;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 130%;
+    padding: 0;
+    margin: 0;
+
+    @include lg() {
+      font-size: 30px;
+    }
+    @include md() {
+      font-size: 24px;
+      line-height: 1.3em;
+    }
+  }
+
+  &__desc {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 150%;
+    max-width: 510px;
+    margin: 0 0 15px;
+  }
+
+  &__form {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+
+    @include md() {
+      flex-direction: column;
+    }
+
+    &Field {
+      width: 60%;
+
+      @include md() {
+        width: 100%;
+      }
+    }
+
+    &Input {
+      background-color: transparent !important;
+      border: 1px solid #c8d5dc !important;
+      border-radius: 8px !important;
+      color: #c8d5dc !important;
+      font-size: 20px !important;
+      font-weight: 400 !important;
+      line-height: 150% !important;
+      padding: 10px 20px !important;
+      width: 100% !important;
+
+      @include lg() {
+        font-size: 16px !important;
+        line-height: 38px !important;
+      }
+
+      &::placeholder {
+        color: #8b9398 !important;
+        font-weight: 500 !important;
+      }
+    }
+
+    &Submit {
+      position: relative;
+      width: 40%;
+
+      @include md() {
+        width: 100%;
+      }
+
+      input[type='submit'] {
+        font-family: $font_roboto;
+        background: linear-gradient(91deg, #587EFF 0%, #445FB4 100%) !important;
+        border-radius: 8px !important;
+        border: none !important;
+        color: $color_white !important;
+        cursor: pointer !important;
+        font-size: 24px !important;
+        font-weight: 500 !important;
+        letter-spacing: 0.24px !important;
+        line-height: 160% !important;
+        transition: 0.3s !important;
+        height: 54px !important;
+        width: 176px !important;
+
+        @include lg() {
+          height: 55px !important;
+          font-size: 20px !important;
+        }
+
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
+  }
+
+  &__image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 100%;
+
+    @include md() {
+      position: static;
+    }
+
+    svg {
+      width: 210px;
+    }
+  }
+
+  form .wpcf7-spinner {
+    display: none;
+  }
+  form.submitting .wpcf7-spinner {
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    left: 0;
+    transform: translateY(-50%);
+    margin: auto;
+    opacity: 0.5;
+  }
+
+  .wpcf7 form {
+    position: relative;
+  }
+
+  form .wpcf7-not-valid-tip {
+    font-size: 14px;
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    right: 16px;
+  }
+
+  .wpcf7 form .wpcf7-response-output {
+    display: none;
+    border: none;
+    color: #ffb900;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 1.5em;
+    margin: 10px 0 0;
+    padding: 0;
+    position: absolute;
+
+    @include media_req('900px', 'max') {
+      font-size: 14px;
+      position: relative;
+    }
+  }
+
+  .wpcf7 form.sent .wpcf7-response-output {
+    display: block;
+    color: $color_white;
+
+    &::before {
+      background-image: url('../img/check-solid-1.png');
+      content: '';
+      background-repeat: no-repeat;
+      background-size: 16px;
+      background-position: center top;
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+      width: 20px;
+      height: 20px;
+    }
+  }
+}

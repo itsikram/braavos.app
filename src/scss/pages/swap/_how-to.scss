@@ -1,0 +1,164 @@
+.how-to {
+  padding: 130px 0 135px 0;
+  background: url('../assets/images/Union.png'), linear-gradient(129deg, #099FC0 -17.03%, #8358FF 96.4%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+
+  &__container {
+    max-width: calc(1352px + 22px + 22px);
+    width: 100%;
+    padding: 0 22px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #FFF;
+    text-align: center;
+
+    /* H2 */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px; /* 126.087% */
+    margin-bottom: 68px;
+  }
+
+  &__items {
+    display: flex;
+    gap: 24px;
+  }
+
+  &__item {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 10px;
+
+    max-width: 320px;
+    width: 100%;
+
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.20);
+
+    /* LIGHT ITEMS */
+    box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.10);
+  }
+
+  &__item-top-wrapper {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    padding: 5px 12px;
+    border-radius: 29px;
+    background: rgba(40, 49, 66, 0.20);
+    margin-bottom: 10px;
+  }
+
+  &__item-image {
+    margin-bottom: 10px;
+  }
+
+  &__item-step {
+    color: var(--Text-White, #FFF);
+    text-align: center;
+
+    /* Body L */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
+  }
+}
+
+.Swiper-guide {
+  margin: 0 auto;
+  width: 1352px;
+  height: 640px;
+}
+
+.guide-slide {
+  height: 580px;
+  margin-bottom: 40px;
+  display: block;
+  font-size: 1.25rem;
+  padding: 10px;
+  min-width: 320px;
+  max-width: 320px;
+  width: 100%;
+  background: #ffffff33;
+  border-radius: 30px;
+  text-align: center;
+  box-shadow: 0px 16px 30px 0px #0000001a;
+  backdrop-filter: blur(10px);
+}
+.guide-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+.guide-header {
+  background: #28314233;
+  border-radius: 30px;
+  display: flex;
+  gap: 10px;
+  padding: 5px 12px;
+}
+.guide-icon {
+  width: 32px;
+  height: 32px;
+}
+.guide-img {
+  width: 100%;
+  border-radius: 30px;
+  border: none;
+  height: 100%;
+}
+
+.guide-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.6;
+  color: #fff;
+  place-self: center;
+}
+.swiper-pagination-guide {
+  display: none;
+}
+.swiper-pagination-guide .swiper-pagination-bullet {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+}
+
+@media screen and (max-width: 1140px) {
+
+  .guide-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+}
+@media screen and (max-width: 1380px) {
+  .guide-container {
+    width: 100%;
+    overflow: hidden;
+  }
+
+  .swiper-pagination-guide {
+    display: block !important;
+  }
+}
+@media screen and (max-width: 480px) {
+  .Swiper-guide {
+    width: 100%;
+  }
+
+
+}

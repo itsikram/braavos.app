@@ -1,0 +1,94 @@
+.sFeatCarousel {
+  margin-top: 90px;
+  position: relative;
+
+  &::after {
+    background: url('../img/feature-carousel-spot-dm.png') center/contain no-repeat;
+    content: '';
+    width: 432px;
+    height: 1595px;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+    z-index: -1;
+  }
+
+  &__title {
+    margin-bottom: 30px;
+  }
+
+  &__sliderWrap {
+    background-color: $secondary;
+    border-radius: 20px;
+    box-shadow: 0px 4px 19px 0px #0000001C;
+    overflow: hidden;
+    padding: 40px 0 10px 40px;
+    position: relative;
+    user-select: none;
+
+    @include md() {
+      padding: 20px 0 10px 12px;
+    }
+  }
+
+  &__slider {
+    padding-right: 40px !important;
+
+    &Item {
+      width: fit-content !important;
+
+      img {
+        display: block;
+        width: auto;
+        height: 434px;
+      }
+
+      &Step{
+        margin: 10px auto 0;
+        padding: 0 7px;
+        width: fit-content;
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 140%;
+        border-radius: 27px;
+        background: #3d3c3c;
+        color: $text;
+      }
+    }
+
+    &Btn {
+      background: linear-gradient(91.25deg, #587eff 0%, #445fb4 100%) !important;
+      color: $white !important;
+      margin: 0 !important;
+      width: 25px !important;
+      height: 100% !important;
+      top: 0 !important;
+      bottom: 0 !important;
+
+      @include md() {
+        width: 14px !important;
+      }
+
+      &_prev {
+        left: 0 !important;
+      }
+
+      &_next {
+        right: 0 !important;
+      }
+
+      &.swiper-button-disabled {
+        opacity: 0 !important;
+      }
+
+      &::after {
+        font-size: 20px !important;
+
+        @include md() {
+          font-size: 14px !important;
+        }
+      }
+    }
+  }
+}

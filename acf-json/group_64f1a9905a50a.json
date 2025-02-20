@@ -1,0 +1,310 @@
+{
+    "key": "group_64f1a9905a50a",
+    "title": "FAQ_1",
+    "fields": [
+        {
+            "key": "field_64f1ac78678ba",
+            "label": "Top",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64f1a99033639",
+            "label": "Top Title",
+            "name": "faq_1_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64f27f8b94f4a",
+            "label": "Background Image (Dark Mode)",
+            "name": "faq_1_bg_img_darkmode",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_64f27f7894f49",
+            "label": "Background Image (Light Mode)",
+            "name": "faq_1_bg_img_lightmode",
+            "aria-label": "",
+            "type": "image",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "preview_size": "medium"
+        },
+        {
+            "key": "field_6502d6f6fb1f7",
+            "label": "Content",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_6502d70bfb1f8",
+            "label": "FAQ Categories and Their Order",
+            "name": "faq_categories",
+            "aria-label": "",
+            "type": "taxonomy",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "taxonomy": "faqcat",
+            "add_term": 1,
+            "save_terms": 0,
+            "load_terms": 0,
+            "return_format": "object",
+            "field_type": "multi_select",
+            "allow_null": 0,
+            "multiple": 0,
+            "bidirectional_target": []
+        },
+        {
+            "key": "field_64f2780b49f45",
+            "label": "Help",
+            "name": "",
+            "aria-label": "",
+            "type": "tab",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "placement": "top",
+            "endpoint": 0
+        },
+        {
+            "key": "field_64f2782049f46",
+            "label": "SVG",
+            "name": "faq_1_help_svg",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_64f2797fb9694",
+            "label": "Title",
+            "name": "faq_1_help_title",
+            "aria-label": "",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": ""
+        },
+        {
+            "key": "field_64f279dbe0c07",
+            "label": "Content",
+            "name": "faq_1_help_content",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": "wpautop"
+        },
+        {
+            "key": "field_64f27a46d8732",
+            "label": "URL left",
+            "name": "faq_1_help_url_1",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_64f27a8fd8733",
+            "label": "SVG Left",
+            "name": "faq_1_help_svg_1",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        },
+        {
+            "key": "field_64f27ac6d8734",
+            "label": "URL Right",
+            "name": "faq_1_help_url_2",
+            "aria-label": "",
+            "type": "link",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "return_format": "array"
+        },
+        {
+            "key": "field_64f27ad8d8735",
+            "label": "SVG Right",
+            "name": "faq_1_help_svg_2",
+            "aria-label": "",
+            "type": "textarea",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "maxlength": "",
+            "rows": 3,
+            "placeholder": "",
+            "new_lines": ""
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/faq_1.php"
+            }
+        ],
+        [
+            {
+                "param": "page_template",
+                "operator": "==",
+                "value": "templates\/faq_1_res.php"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "left",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": true,
+    "description": "",
+    "show_in_rest": 0,
+    "acfml_field_group_mode": "translation",
+    "modified": 1704384556
+}

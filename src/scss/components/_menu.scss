@@ -1,0 +1,120 @@
+.main-menu {
+
+}
+
+.main-menu__list {
+  list-style: none;
+  display: flex;
+  position: relative;
+  justify-content: space-between;
+
+}
+
+
+.main-menu__list-item {
+  position: relative;
+}
+
+.main-menu__list-item-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-menu__list-item-icon {
+  display: none;
+}
+
+.main-menu__list-item:hover .main-menu__list-item-icon {
+  display: block;
+}
+
+.main-menu__list-item-text {
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 24px; /* 150% */
+  color: var(--main-font-color);
+}
+
+.main-menu__dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(255, 255, 255, 0.10);
+  backdrop-filter: blur(35px);
+  border-radius: 30px;
+  display: flex;
+  width: 177px;
+  padding: 26px 0px;
+  flex-direction: column;
+  align-items: flex-start;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+  z-index: 1;
+}
+
+.main-menu__list-item:hover .main-menu__dropdown,
+.main-menu__list-item:focus-within .main-menu__dropdown {
+  display: flex;
+  opacity: 1;
+  visibility: visible;
+}
+
+.main-menu__dropdown-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+
+.main-menu__dropdown-list-item {
+  padding: 8px 0;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.main-menu__dropdown-list-item-link {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  text-decoration: none;
+  width: 100%;
+  gap: 10px;
+
+  color: var(--main-font-color);
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 24px; /* 150% */
+}
+
+.main-menu__dropdown-list-item-link-icon {
+
+}
+
+.main-menu__dropdown-list-item-link-text {
+  display: flex;
+  align-items: center;
+}
+
+.main-menu__dropdown-list-item-link:hover {
+  background: rgba(255, 255, 255, 0.20);
+  border-radius: 50px;
+  //padding: 10px 0px;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 10px;
+  align-self: stretch;
+}
+
+.main-menu__dropdown-list-item-link:hover a {
+  background-color: transparent;
+  border-radius: 50px;
+}

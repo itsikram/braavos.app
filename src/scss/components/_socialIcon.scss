@@ -1,0 +1,13 @@
+.socialIcon {
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+  svg {
+    display: block;
+    height: 1em;
+    width: 1em;
+  }
+}

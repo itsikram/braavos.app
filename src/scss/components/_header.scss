@@ -1,0 +1,126 @@
+.main-header {
+
+  background-color: var(--main-header-background-color);
+
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+
+  padding: 11px 0;
+
+  &__container {
+    width: 100%;
+    max-width: calc(1315px + 38px + 38px);
+    padding: 0 38px;
+    margin: 0 auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    //gap: 146px;
+    //
+    //@media (max-width: 1360px) {
+    //  gap: 120px;
+    //}
+    //
+    //@media (max-width: 1230px) {
+    //  gap: 100px;
+    //}
+    //
+    //@media (max-width: 1165px) {
+    //  gap: 80px;
+    //}
+    //
+    //@media (max-width: 1110px) {
+    //  gap: 50px;
+    //}
+    //
+    //@media (max-width: 1024px) {
+    //  gap: 0;
+    //}
+
+    @media (max-width: 768px) {
+      padding: 0 22px;
+    }
+  }
+
+  &__logo {
+    svg {
+      width: 160px;
+      height: 43px;
+
+      @media (max-width: 768px) {
+        width: 114px;
+        height: 31px;
+      }
+    }
+  }
+
+  &__menu-wrapper {
+    width: 100%;
+    max-width: 600px;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__download-wrapper {
+    @media (max-width: 1024px) {
+      margin-left: auto;
+      margin-right: 20px;
+    }
+  }
+
+  &__download-link {
+    background: radial-gradient(50% 50% at 50% 50%, #587EFF 47%, #5478F4 100%);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 18.725px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: #FFF;
+    padding: 8px 20px;
+    border-radius: 26px;
+    box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.10);
+    position: relative;
+
+    @media (max-width: 768px) {
+      font-size: 14px;
+      padding: 6px 15px;
+      gap: 7px;
+    }
+  }
+
+  &__download-link-icon {
+    position: relative;
+    top: 2px;
+  }
+
+  &__switch-wrapper {
+    @media (max-width: 1024px) {
+      display: none;
+    }
+  }
+
+  &__mobile-menu {
+    display: none;
+
+    @media (max-width: 1024px) {
+      display: block;
+    }
+  }
+}
+
+
+
+
+.main-header__logo {
+  display: none; /* По умолчанию скрываем все логотипы */
+}
+
+.main-header__logo.active {
+  display: block; /* Показываем только активный логотип */
+}

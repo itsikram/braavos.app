@@ -1,0 +1,115 @@
+.security-how {
+
+  padding: 130px 0;
+  background: url('../assets/images/Union.png'),
+  linear-gradient(129deg, #099FC0 -17.03%, #8358FF 96.4%);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain ;
+
+  @media (max-width: 768px) {
+    padding: 85px 0;
+    background-size: cover;
+  }
+
+  &__container {
+    max-width: calc(1275px + 22px + 22px);
+    width: 100%;
+    padding: 0 22px;
+    margin: 0 auto;
+  }
+
+  &__title {
+    color: #FFF;
+    text-align: center;
+
+    /* H2 */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58px; /* 126.087% */
+    margin-bottom: 68px;
+
+    @media (max-width: 768px) {
+      font-size: 32px;
+      line-height: 44px;
+    }
+  }
+
+  &__list {
+    display: flex;
+    gap: 24px;
+    
+    @media (max-width: 1024px) {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr);
+      grid-column-gap: 24px;
+      grid-row-gap: 24px;
+    }
+
+    @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+      gap: 24px;
+    }
+  }
+
+  &__item {
+    max-width: 25%;
+    width: 100%;
+    padding: 24px 16px 15px 16px;
+
+    border-radius: 30px;
+    border: 0px solid #3E4A5B;
+    background: rgba(255, 255, 255, 0.20);
+
+    /* LIGHT ITEMS */
+    box-shadow: 0px 16px 30px 0px rgba(0, 0, 0, 0.10);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (max-width: 1024px) {
+      max-width: 100%;
+    }
+  }
+
+  &__item-image {
+    margin-bottom: 20px;
+  }
+
+  &__item-title {
+    color: #FFF;
+    text-align: center;
+
+    /* H4 */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 44px; /* 157.143% */
+    margin-bottom: 10px;
+
+    @media (max-width: 768px) {
+      font-size: 24px;
+      line-height: 38px;
+    }
+  }
+
+  &__item-text {
+    color: #FFF;
+    text-align: center;
+
+    /* Body L */
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 32px; /* 160% */
+
+
+  }
+}

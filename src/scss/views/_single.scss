@@ -1,0 +1,388 @@
+.sp {
+  padding: 2% 0 8%;
+
+  @include md() {
+    padding-bottom: 80px;
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin: 0 auto;
+    max-width: 740px;
+
+    @include lg() {
+      max-width: none;
+    }
+    @include md() {
+      gap: 25px;
+    }
+  }
+
+  &__title {
+    // font-family: $font_mulish;
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 50px;
+    margin: 0;
+    padding: 0;
+
+    @include xl() {
+      font-size: 36px;
+    }
+    @include lg() {
+      font-size: 28px;
+      line-height: 1.3em;
+    }
+    @include md() {
+      font-size: 24px;
+    }
+  }
+
+  &__excerpt {
+    font-size: 28px;
+    font-weight: 500;
+    margin-bottom: -6px;
+
+    @include lg() {
+      font-size: 20px;
+    }
+  }
+
+  &__meta {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    color: $color_meta;
+    // font-family: $font_mulish;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 50px;
+
+    @include md() {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 25px;
+      line-height: 1.3em;
+    }
+
+    &Left {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      overflow: hidden;
+      width: 100%;
+
+      @include md() {
+        flex-wrap: wrap;
+      }
+    }
+
+    &Right {
+      max-width: 300px;
+    }
+  }
+
+  &__category {
+    background-color: #3d3c3c;
+    border-radius: 100px;
+    color: #949494;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 1.25em;
+    letter-spacing: 0.02em;
+    padding: 9px 16px;
+    text-decoration: none;
+    transition: 0.5s;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+
+  &__date,
+  &__readingTime {
+    flex-shrink: 0;
+  }
+
+  &__share {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+
+    &Title {
+      color: $color_meta;
+    }
+
+    &Buttons {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 7px;
+
+      @include md() {
+        font-size: 5.5px;
+      }
+    }
+
+    &Button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      cursor: pointer;
+      transition: 0.2s;
+
+      &:hover {
+        opacity: 0.8;
+      }
+
+      svg {
+        display: block;
+        width: 4.6em;
+        height: 4.6em;
+      }
+    }
+  }
+
+  &__thumbnail {
+    img {
+      display: block;
+      border-radius: 12px;
+
+      @include lg() {
+        width: 100%;
+      }
+    }
+  }
+
+  &__content {
+    font-size: 20px;
+    line-height: 29px;
+
+    h2 {
+      // font-family: $font_mulish;
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 120%;
+      margin: 0;
+      padding: 33px 0 20px;
+
+      @include md() {
+        font-size: 24px;
+        padding: 28px 0 16px;
+      }
+    }
+
+    h3 {
+      // font-family: $font_mulish;
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 0;
+      padding: 23px 0 18px;
+
+      @include md() {
+        font-size: 20px;
+        padding: 17px 0 14px;
+      }
+    }
+
+    .wp-block-image {
+      padding: 28px 0 40px;
+    }
+
+    ul,
+    ol {
+      margin: 0 0 0.9rem;
+    }
+
+    figure.wp-block-table{
+      border-radius: 8px;
+      max-width: fit-content;
+
+      table {
+        display: block;
+
+        tbody {
+          width: 100%;
+          display: block;
+
+          tr{
+            border-bottom: 1px solid $white;
+
+            &:last-child{
+              border-bottom: none;
+            }
+          }
+
+          td{
+            border: none;
+            border-right: 1px solid $white;
+            background-color: $alice_blue;
+            color: #000000;
+            font-size: 14px;
+            font-weight: 400;
+            line-height: 150%;
+            padding: 10px;
+
+            &:first-child{
+              padding-left: 15px;
+              white-space: nowrap;
+
+              @include sm() {
+                white-space: normal;
+              }
+            }
+
+            &:last-child{
+              padding-right: 15px;
+              border-right: none;
+            }
+
+            strong {
+              font-weight: 600;
+            }
+          }
+
+        }
+      }
+    }
+
+    .wp-block-columns{
+      margin: 32px 0;
+    }
+
+  }
+
+  &__author {
+    background-color: #ffffff24;
+    border: 1px solid transparent;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 19px;
+
+    @include md() {
+      flex-direction: column;
+      gap: 0;
+    }
+
+    &Right {
+      @include md() {
+        text-align: center;
+      }
+    }
+
+    &Image {
+      display: flex;
+      height: 100%;
+
+      img {
+        border-radius: 50%;
+        margin: auto;
+        width: 138px;
+        height: 138px;
+
+        @include md() {
+          width: 80px;
+          height: 80px;
+        }
+      }
+    }
+
+    &Name {
+      // font-family: $font_mulish;
+      font-size: 24px;
+      font-weight: 700;
+      line-height: 50px;
+      margin: 0.5rem 0 6px;
+
+      @include lg() {
+        line-height: 1.3em;
+      }
+      @include md() {
+        margin: 18px 0 8px;
+      }
+    }
+
+    &Info {
+      display: block;
+      font-size: 18px;
+      font-weight: 300;
+
+      > div {
+        display: flex;
+        gap: 8px;
+
+        @include md() {
+          justify-content: center;
+        }
+
+        a {
+          font-size: 0;
+          margin-top: 12px;
+
+          &::before {
+            content: '';
+            display: block;
+            width: 34px;
+            height: 34px;
+          }
+
+          &[href*='twitter.com']::before {
+            background: url('../svg/icon-x.svg') center / contain no-repeat;
+          }
+
+          &[href*='linkedin.com']::before {
+            background: url('../svg/icon-linkedin.svg') center / contain no-repeat;
+          }
+
+          &[href*='telegram']::before {
+            background: url('../svg/icon-telegram.svg') center / contain no-repeat;
+          }
+        }
+      }
+    }
+  }
+}
+
+.sRelatedPosts {
+  padding-bottom: 55px;
+
+  @include md() {
+    padding-bottom: 50px;
+  }
+
+  &__title {
+    // font-family: $font_mulish;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 124.188%;
+    margin: 0 0 31px;
+    padding: 0;
+    text-align: center;
+
+    @include lg() {
+      line-height: 1.3em;
+    }
+    @include md() {
+      font-size: 30px;
+      margin-bottom: 22px;
+    }
+
+    &::after {
+      content: '';
+      display: block;
+      background-color: $color_blue;
+      margin: 33px auto 0;
+      width: 16%;
+      height: 4px;
+
+      @include md() {
+        margin-top: 23px;
+        width: 96px;
+      }
+    }
+  }
+}

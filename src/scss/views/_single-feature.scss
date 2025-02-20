@@ -1,0 +1,9 @@
+.featurePage {
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  section:last-of-type:not(.sectionHasBg) {
+    margin-bottom: 170px;
+  }
+}
